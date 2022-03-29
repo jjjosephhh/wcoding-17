@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <div className="card">
+        <div className="card-content">
+          <div className="content">
+            <input
+              className="input is-primary"
+              type="text"
+              placeholder="Enter something..."
+            />
+
+            <br />
+            <br />
+
+            <div className="field has-addons">
+              <p className="control">
+                <button className="button">
+                  <span>a</span>
+                </button>
+              </p>
+              <p className="control">
+                <button className="button">
+                  <span>s</span>
+                </button>
+              </p>
+              <p className="control">
+                <button className="button">
+                  <span>d</span>
+                </button>
+              </p>
+              <p className="control">
+                <button className="button">
+                  <span>f</span>
+                </button>
+              </p>
+            </div>
+
+            <br />
+            <br />
+
+            <button className="button is-link">Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
